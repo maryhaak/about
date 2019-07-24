@@ -86,11 +86,30 @@ p.text_long {
     grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . .";
 }
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 1000px) {
+    body {
+        overflow: auto;
+    }
+    .page-wrapper {
+        transform: none;
+        width: 100vw;
+        height: auto;
+        margin-top: 0vh;
+        margin-left: 0vw;
+    }
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: " . . . ." " . . . ." " . . . ." " . . . ." " . . . .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 10fr 10fr 5fr 7fr 1fr 1fr 1fr;
+        grid-template-areas: " . . ";
+        border: 1px solid #bebebe;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 4fr 5fr 5fr 0.2fr 0.2fr 4fr 4fr 5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+        grid-template-areas: " . ";
+    }
+} */
