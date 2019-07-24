@@ -18,7 +18,7 @@ html, body, .grid-container {
     margin-left: -15vw;
     color: #efefef;
     font-family: 'Nanum Gothic Coding', monospace;
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 16px;
 }
 
@@ -39,6 +39,19 @@ h2 {
     letter-spacing: 2px;
     opacity: 0.5;
     font-size: 14px;
+}
+
+.text_short {
+    line-height: 1.4;
+}
+
+.text_long {
+    opacity: 0.5;
+    line-height: 1.4;
+}
+
+p.text_long {
+    margin-top: 0px;
 }
 
 .grid-container div {
@@ -69,7 +82,7 @@ h2 {
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1.4fr 2fr 3fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
     grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . .";
 }
 
