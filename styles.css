@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #333;
+}
+
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.page-wrapper {
+  transform: rotate(4deg);
+  height: 130vh;
+  width: 130vw;
+  margin-top: -15vh;
+  margin-left: -15vw;
+  color: #efefef;
+  font-family: 'Nanum Gothic Coding', monospace;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+  border-bottom: 1px solid yellow;
+  transition: all 0.1s ease-in;
+}
+
+.grid-container div {
+ border: 1px solid #bebebe;
+ padding: 20px 10px;
+ position: relative;
+}
+
+a {
+  font-size: 14px;
+}
+
+#image {
+  background-image: url(https://scontent-arn2-1.cdninstagram.com/vp/ae677720ebc078f5cd9db3a9bdfc2648/5D8FA647/t51.2885-15/e35/40965748_161287314793715_7722706590381636025_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com); background-size: cover; background-position: center;
+}
+
+#image:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	background-image:
+		linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black);
+	background-size: 3px 3px;
+}
+
+.grid-container *:after {
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . .";
+}
