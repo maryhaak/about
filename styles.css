@@ -61,9 +61,9 @@ p.text_long {
 }
 
 #image {
-    background-image: url(https://scontent-arn2-1.cdninstagram.com/vp/ae677720ebc078f5cd9db3a9bdfc2648/5D8FA647/t51.2885-15/e35/40965748_161287314793715_7722706590381636025_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com);
+    background-image: url(images/avatar.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 #image:after {
@@ -74,7 +74,7 @@ p.text_long {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black), linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black), linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black), linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black);
     background-size: 3px 3px;
 }
