@@ -50,6 +50,12 @@ h2 {
     line-height: 1.4;
 }
 
+p {
+    margin-bottom: 0.7em;
+    margin-top: 0.7em;
+    line-height: 1.4;
+}
+
 p.text_long {
     margin-top: 0px;
 }
